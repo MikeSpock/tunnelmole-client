@@ -13,8 +13,8 @@ const baseConfig = {
 
 
 const config = deepmerge(baseConfig, instanceConfig);
-if(process.env.ENDPOINT) config.hostip.endpoint = process.env.ENDPOINT;
-if(process.env.HTTP_ENDPOINT) config.hostip.httpEndpoint = process.env.HTTP_ENDPOINT;
-if(process.env.PORT) config.hostip.port = process.env.PORT;
+if(process.env.TM_CLIENT_ENDPOINT) config.hostip.endpoint = process.env.TM_CLIENT_ENDPOINT;
+if(process.env.TM_CLIENT_HTTP_ENDPOINT) config.hostip.httpEndpoint = process.env.TM_CLIENT_HTTP_ENDPOINT;
+if(process.env.TM_CLIENT_PORT) config.hostip.port = process.env.TM_CLIENT_PORT;
 
 export default config;
