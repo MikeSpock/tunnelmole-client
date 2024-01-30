@@ -1,6 +1,5 @@
 .idea
 .vscode
-dist
 scripts
 node_modules
 jspm_packages
